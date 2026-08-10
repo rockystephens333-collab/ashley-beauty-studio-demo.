@@ -13,19 +13,23 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(circle at top, #32135e 0%, #120b22 35%, #08080b 70%);
-      color: white;
+        radial-gradient(circle at top, #32135e 0%, #120b22 35%, #08080b 72%);
+      color: #ffffff;
       min-height: 100vh;
     }
 
     .page {
       width: 92%;
       max-width: 1050px;
-      margin: auto;
-      padding: 50px 0 80px;
+      margin: 0 auto;
+      padding: 45px 0 80px;
     }
 
     .brand {
@@ -34,33 +38,32 @@
     }
 
     .logo {
-      width: 60px;
-      height: 60px;
-      margin: auto;
+      width: 62px;
+      height: 62px;
       border-radius: 18px;
+      margin: 0 auto 15px;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 30px;
       background: linear-gradient(135deg, #9b5cff, #5c2cff);
       box-shadow: 0 0 35px rgba(155, 92, 255, .45);
-      font-size: 30px;
-      margin-bottom: 15px;
     }
 
     .brand h2 {
-      font-size: 22px;
+      font-size: 24px;
       letter-spacing: 1px;
     }
 
     .brand p {
-      color: #aaa;
-      margin-top: 7px;
+      color: #aaa6b3;
       font-size: 14px;
+      margin-top: 7px;
     }
 
     .hero {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 45px;
     }
 
     .badge {
@@ -75,8 +78,8 @@
     }
 
     .hero h1 {
-      font-size: clamp(36px, 7vw, 65px);
-      line-height: 1.05;
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: 1.06;
       max-width: 850px;
       margin: auto;
     }
@@ -86,17 +89,38 @@
     }
 
     .hero-text {
-      color: #b7b7c2;
-      max-width: 650px;
+      max-width: 700px;
       margin: 22px auto 0;
+      color: #b7b7c2;
       font-size: 18px;
       line-height: 1.6;
     }
 
-    .instructions {
-      margin-top: 18px;
-      font-size: 14px;
-      color: #e7dbff;
+    .hero-buttons {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #8e49f6, #5d24c5);
+      color: white;
+    }
+
+    .btn-secondary {
+      color: white;
+      border: 1px solid #5e536d;
+      background: rgba(255,255,255,.04);
     }
 
     .demo-card {
@@ -104,12 +128,7 @@
       margin: 45px auto;
       padding: 2px;
       border-radius: 25px;
-      background: linear-gradient(
-        135deg,
-        #a55cff,
-        #4d1da3,
-        #cf5cff
-      );
+      background: linear-gradient(135deg, #a55cff, #4d1da3, #cf5cff);
       box-shadow: 0 0 60px rgba(123, 60, 220, .25);
     }
 
@@ -132,31 +151,31 @@
     .dot {
       width: 8px;
       height: 8px;
-      background: #52e88c;
       border-radius: 50%;
+      background: #52e88c;
       box-shadow: 0 0 10px #52e88c;
     }
 
     .demo-inner h2 {
-      font-size: 27px;
+      font-size: 28px;
       margin-bottom: 10px;
     }
 
     .demo-inner p {
       color: #aaa6b3;
-      margin-bottom: 28px;
       line-height: 1.5;
+      margin-bottom: 25px;
     }
 
     .voice-area {
-      padding: 25px 10px;
+      padding: 20px 0;
     }
 
     .phone-divider {
       display: flex;
       align-items: center;
       gap: 15px;
-      margin: 30px 0;
+      margin: 28px 0;
       color: #777;
       font-size: 12px;
     }
@@ -180,28 +199,23 @@
       color: white;
       font-weight: bold;
       background: linear-gradient(135deg, #8e49f6, #5d24c5);
-      transition: .2s;
-    }
-
-    .call-button:hover {
-      transform: translateY(-2px);
     }
 
     .phone-number {
-      color: #8e8b94;
-      font-size: 13px;
       margin-top: 12px !important;
+      font-size: 13px;
+      color: #8e8b94 !important;
     }
 
-    .try-section {
-      max-width: 750px;
-      margin: 55px auto;
+    .section {
+      max-width: 900px;
+      margin: 75px auto 0;
     }
 
-    .try-section h2 {
+    .section h2 {
       text-align: center;
-      font-size: 28px;
-      margin-bottom: 25px;
+      font-size: 32px;
+      margin-bottom: 30px;
     }
 
     .questions {
@@ -211,22 +225,11 @@
     }
 
     .question {
-      background: rgba(255,255,255,.045);
-      border: 1px solid rgba(255,255,255,.08);
       padding: 17px;
       border-radius: 13px;
       color: #d4d1da;
-    }
-
-    .features {
-      margin: 70px auto 0;
-      max-width: 900px;
-    }
-
-    .features h2 {
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 30px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.08);
     }
 
     .feature-grid {
@@ -236,10 +239,10 @@
     }
 
     .feature {
+      padding: 24px 20px;
+      border-radius: 16px;
       background: rgba(255,255,255,.04);
       border: 1px solid rgba(255,255,255,.08);
-      padding: 25px 20px;
-      border-radius: 16px;
     }
 
     .feature-icon {
@@ -257,6 +260,62 @@
       font-size: 14px;
     }
 
+    .pricing-card {
+      max-width: 680px;
+      margin: auto;
+      padding: 36px;
+      border-radius: 22px;
+      text-align: center;
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(183,137,255,.35);
+      box-shadow: 0 0 45px rgba(123, 60, 220, .12);
+    }
+
+    .pricing-card h3 {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+
+    .price-main {
+      font-size: 42px;
+      font-weight: 800;
+      color: #c9aaff;
+    }
+
+    .price-monthly {
+      color: #aaa6b3;
+      font-size: 19px;
+      margin-top: 6px;
+      margin-bottom: 24px;
+    }
+
+    .included {
+      list-style: none;
+      text-align: left;
+      max-width: 520px;
+      margin: 0 auto 28px;
+    }
+
+    .included li {
+      padding: 10px 0;
+      color: #ddd9e3;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+
+    .included li::before {
+      content: "✓";
+      color: #82f0ad;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .pricing-text {
+      max-width: 540px;
+      margin: 0 auto 22px;
+      color: #aaa6b3;
+      line-height: 1.6;
+    }
+
     .footer {
       text-align: center;
       margin-top: 80px;
@@ -270,8 +329,9 @@
         grid-template-columns: 1fr;
       }
 
-      .demo-inner {
-        padding: 25px 18px;
+      .demo-inner,
+      .pricing-card {
+        padding: 24px 18px;
       }
 
       .page {
@@ -283,177 +343,258 @@
 
 <body>
 
-<div class="page">
+  <div class="page">
 
-  <div class="brand">
-    <div class="logo">✦</div>
-    <h2>NovaFlow</h2>
-    <p>AI Receptionist & Business Automation</p>
-  </div>
-
-  <section class="hero">
-
-    <div class="badge">
-      LIVE AI RECEPTIONIST DEMO
+    <div class="brand">
+      <div class="logo">✦</div>
+      <h2>NovaFlow</h2>
+      <p>AI Receptionist & Business Automation</p>
     </div>
 
-    <h1>
-      Meet Your
-      <span class="purple">24/7 AI Receptionist</span>
-    </h1>
+    <section class="hero">
 
-    <p class="hero-text">
-      This is a live demonstration built for Ashley Beauty Studio.
-      Talk to the AI just like you're a real customer and see how it
-      answers questions, explains services and helps customers move
-      toward booking.
-    </p>
-
-    <p class="instructions">
-      🎤 Pretend you're a customer. Ask about prices, hours,
-      policies, services or booking.
-    </p>
-
-  </section>
-
-  <div class="demo-card">
-
-    <div class="demo-inner">
-
-      <div class="status">
-        <span class="dot"></span>
-        AI Receptionist Online
+      <div class="badge">
+        LIVE AI RECEPTIONIST DEMO
       </div>
 
-      <h2>Ashley Beauty Studio</h2>
+      <h1>
+        Meet Your
+        <span class="purple">24/7 AI Receptionist</span>
+      </h1>
 
-      <p>
-        Click below and speak directly with Ashley's AI receptionist.
+      <p class="hero-text">
+        This is a live demonstration built for Ashley Beauty Studio.
+        Talk to the AI like you're a real customer and see how it answers
+        questions, explains services, and helps customers move toward booking.
       </p>
 
-      <div class="voice-area">
+      <div class="hero-buttons">
+        <a href="#demo" class="btn btn-primary">
+          Try the Live AI Demo
+        </a>
 
-        <vapi-widget
-          public-key="6975cb16-d87d-40f8-9703-ba7fb34ca079"
-          assistant-id="339fdf2a-9126-46ce-8c29-1543ed3b451b"
-          mode="voice"
-          theme="dark"
-          size="full"
-          radius="large"
-          base-color="#111016"
-          accent-color="#9b5cff"
-          button-base-color="#7c3aed"
-          button-accent-color="#ffffff"
-          main-label="Talk to Ashley's AI Receptionist"
-          start-button-text="Start Conversation"
-          end-button-text="End Call"
-          empty-voice-message="Tap below and pretend you're a customer."
+        <a
+          href="https://api.leadconnectorhq.com/widget/bookings/mynovaflow-consultation"
+          target="_blank"
+          class="btn btn-secondary"
         >
-        </vapi-widget>
+          Book a Free Consultation
+        </a>
+      </div>
+
+    </section>
+
+    <div class="demo-card" id="demo">
+
+      <div class="demo-inner">
+
+        <div class="status">
+          <span class="dot"></span>
+          AI Receptionist Online
+        </div>
+
+        <h2>Ashley Beauty Studio</h2>
+
+        <p>
+          Pretend you're a customer. Ask about prices, services,
+          deposits, hours, policies, or booking.
+        </p>
+
+        <div class="voice-area">
+
+          <vapi-widget
+            public-key="6975cb16-d87d-40f8-9703-ba7fb34ca079"
+            assistant-id="339fdf2a-9126-46ce-8c29-1543ed3b451b"
+            mode="voice"
+            theme="dark"
+            size="full"
+            radius="large"
+            base-color="#111016"
+            accent-color="#9b5cff"
+            button-base-color="#7c3aed"
+            button-accent-color="#ffffff"
+            main-label="Talk to Ashley's AI Receptionist"
+            start-button-text="Start Conversation"
+            end-button-text="End Call"
+            empty-voice-message="Tap below and pretend you're a customer."
+          >
+          </vapi-widget>
+
+        </div>
+
+        <div class="phone-divider">
+          OR CALL THE DEMO
+        </div>
+
+        <a
+          class="call-button"
+          href="tel:+17163506619"
+        >
+          📞 Call Ashley's AI Receptionist
+        </a>
+
+        <p class="phone-number">
+          +1 (716) 350-6619
+        </p>
 
       </div>
 
-      <div class="phone-divider">
-        OR CALL THE DEMO
+    </div>
+
+    <section class="section">
+
+      <h2>Try Asking the AI</h2>
+
+      <div class="questions">
+
+        <div class="question">
+          “How much are medium knotless braids?”
+        </div>
+
+        <div class="question">
+          “Do I need to pay a deposit?”
+        </div>
+
+        <div class="question">
+          “Are you open Saturday?”
+        </div>
+
+        <div class="question">
+          “I want to book an appointment.”
+        </div>
+
+        <div class="question">
+          “Is hair included?”
+        </div>
+
+        <div class="question">
+          “Can I get waist-length braids?”
+        </div>
+
       </div>
 
-      <a
-        class="call-button"
-        href="tel:+17163506619"
-      >
-        📞 Call Ashley's AI Receptionist
-      </a>
+    </section>
 
-      <p class="phone-number">
-        +1 (716) 350-6619
-      </p>
+    <section class="section">
 
+      <h2>
+        What <span class="purple">NovaFlow</span> Can Handle
+      </h2>
+
+      <div class="feature-grid">
+
+        <div class="feature">
+          <div class="feature-icon">📞</div>
+          <h3>Phone Calls</h3>
+          <p>
+            Answers customer calls and common questions while you're busy.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">💬</div>
+          <h3>SMS</h3>
+          <p>
+            Responds to customer texts and helps move leads toward booking.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">📲</div>
+          <h3>Instagram DMs</h3>
+          <p>
+            Helps answer common DMs and guides customers toward booking.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">📅</div>
+          <h3>Booking Assistance</h3>
+          <p>
+            Helps customers reach the correct booking page while you keep
+            your existing booking system.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">👥</div>
+          <h3>Lead Capture</h3>
+          <p>
+            Keeps customer information organized inside your CRM.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🔁</div>
+          <h3>Follow-Up</h3>
+          <p>
+            Helps follow up with interested customers who have not booked yet.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <h2>
+        Start With <span class="purple">NovaFlow</span>
+      </h2>
+
+      <div class="pricing-card">
+
+        <h3>NovaFlow AI Receptionist</h3>
+
+        <div class="price-main">
+          $500 Setup
+        </div>
+
+        <div class="price-monthly">
+          + $297/month
+        </div>
+
+        <ul class="included">
+          <li>AI phone receptionist setup</li>
+          <li>SMS automation setup</li>
+          <li>Instagram DM automation setup</li>
+          <li>Custom business knowledge base</li>
+          <li>Booking assistance</li>
+          <li>Keep your existing booking system</li>
+          <li>Lead capture and CRM setup</li>
+          <li>Basic follow-up automation</li>
+          <li>Testing and launch support</li>
+        </ul>
+
+        <p class="pricing-text">
+          Book a free consultation so we can talk about your business,
+          where customers may be getting missed, and how NovaFlow can help
+          automate your customer communication.
+        </p>
+
+        <a
+          href="https://api.leadconnectorhq.com/widget/bookings/mynovaflow-consultation"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          Book a Free Consultation
+        </a>
+
+      </div>
+
+    </section>
+
+    <div class="footer">
+      NovaFlow AI Receptionist Demo • Built for demonstration purposes
     </div>
 
   </div>
 
-  <section class="try-section">
-
-    <h2>Try asking the AI...</h2>
-
-    <div class="questions">
-
-      <div class="question">
-        “How much are medium knotless braids?”
-      </div>
-
-      <div class="question">
-        “Do I need to pay a deposit?”
-      </div>
-
-      <div class="question">
-        “Are you open Saturday?”
-      </div>
-
-      <div class="question">
-        “I want to book an appointment.”
-      </div>
-
-      <div class="question">
-        “Is hair included?”
-      </div>
-
-      <div class="question">
-        “Can I get waist-length braids?”
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="features">
-
-    <h2>
-      What <span class="purple">NovaFlow</span> Can Handle
-    </h2>
-
-    <div class="feature-grid">
-
-      <div class="feature">
-        <div class="feature-icon">📞</div>
-        <h3>Phone Calls</h3>
-        <p>
-          Answers customer calls while you're busy working with clients.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">💬</div>
-        <h3>SMS & Messages</h3>
-        <p>
-          Helps respond to customer questions and move leads toward booking.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">📅</div>
-        <h3>Booking Assistance</h3>
-        <p>
-          Answers service questions and helps customers reach your
-          existing booking system.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <div class="footer">
-    NovaFlow AI Receptionist Demo • Built for demonstration purposes
-  </div>
-
-</div>
-
-<script
-  src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
-  async
-  type="text/javascript">
-</script>
+  <script
+    src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+    async
+    type="text/javascript">
+  </script>
 
 </body>
 </html>
