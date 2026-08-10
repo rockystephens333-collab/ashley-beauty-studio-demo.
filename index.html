@@ -23,7 +23,7 @@
 
     .page {
       width: 92%;
-      max-width: 1100px;
+      max-width: 1050px;
       margin: auto;
       padding: 50px 0 80px;
     }
@@ -34,8 +34,8 @@
     }
 
     .logo {
-      width: 62px;
-      height: 62px;
+      width: 60px;
+      height: 60px;
       margin: auto;
       border-radius: 18px;
       display: flex;
@@ -48,7 +48,7 @@
     }
 
     .brand h2 {
-      font-size: 24px;
+      font-size: 22px;
       letter-spacing: 1px;
     }
 
@@ -75,9 +75,9 @@
     }
 
     .hero h1 {
-      font-size: clamp(38px, 7vw, 68px);
+      font-size: clamp(36px, 7vw, 65px);
       line-height: 1.05;
-      max-width: 900px;
+      max-width: 850px;
       margin: auto;
     }
 
@@ -87,50 +87,29 @@
 
     .hero-text {
       color: #b7b7c2;
-      max-width: 700px;
+      max-width: 650px;
       margin: 22px auto 0;
       font-size: 18px;
       line-height: 1.6;
     }
 
-    .hero-buttons {
-      margin-top: 28px;
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 24px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: .2s;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #8e49f6, #5d24c5);
-      color: white;
-    }
-
-    .btn-secondary {
-      border: 1px solid #5e536d;
-      color: white;
-      background: rgba(255,255,255,.04);
+    .instructions {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #e7dbff;
     }
 
     .demo-card {
-      max-width: 760px;
-      margin: 50px auto;
+      max-width: 720px;
+      margin: 45px auto;
       padding: 2px;
       border-radius: 25px;
-      background: linear-gradient(135deg, #a55cff, #4d1da3, #cf5cff);
+      background: linear-gradient(
+        135deg,
+        #a55cff,
+        #4d1da3,
+        #cf5cff
+      );
       box-shadow: 0 0 60px rgba(123, 60, 220, .25);
     }
 
@@ -159,7 +138,7 @@
     }
 
     .demo-inner h2 {
-      font-size: 28px;
+      font-size: 27px;
       margin-bottom: 10px;
     }
 
@@ -201,6 +180,11 @@
       color: white;
       font-weight: bold;
       background: linear-gradient(135deg, #8e49f6, #5d24c5);
+      transition: .2s;
+    }
+
+    .call-button:hover {
+      transform: translateY(-2px);
     }
 
     .phone-number {
@@ -209,15 +193,15 @@
       margin-top: 12px !important;
     }
 
-    .section {
-      margin: 75px auto 0;
-      max-width: 950px;
+    .try-section {
+      max-width: 750px;
+      margin: 55px auto;
     }
 
-    .section h2 {
+    .try-section h2 {
       text-align: center;
-      font-size: 32px;
-      margin-bottom: 30px;
+      font-size: 28px;
+      margin-bottom: 25px;
     }
 
     .questions {
@@ -232,6 +216,17 @@
       padding: 17px;
       border-radius: 13px;
       color: #d4d1da;
+    }
+
+    .features {
+      margin: 70px auto 0;
+      max-width: 900px;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
     }
 
     .feature-grid {
@@ -262,71 +257,6 @@
       font-size: 14px;
     }
 
-    .pricing-card {
-      max-width: 680px;
-      margin: 0 auto;
-      background: rgba(255,255,255,.045);
-      border: 1px solid rgba(183,137,255,.35);
-      border-radius: 22px;
-      padding: 38px;
-      box-shadow: 0 0 45px rgba(123, 60, 220, .12);
-    }
-
-    .pricing-card h3 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .price {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    .price-main {
-      font-size: 42px;
-      font-weight: 800;
-      color: #c9aaff;
-    }
-
-    .price-sub {
-      color: #aaa;
-      margin-top: 6px;
-    }
-
-    .included {
-      list-style: none;
-      margin: 25px 0;
-      display: grid;
-      gap: 12px;
-    }
-
-    .included li {
-      background: rgba(255,255,255,.035);
-      border-radius: 10px;
-      padding: 12px 14px;
-      color: #ddd9e3;
-    }
-
-    .included li::before {
-      content: "✓";
-      color: #82f0ad;
-      margin-right: 10px;
-      font-weight: bold;
-    }
-
-    .booking-box {
-      text-align: center;
-      margin-top: 28px;
-    }
-
-    .booking-box p {
-      color: #aaa6b3;
-      max-width: 540px;
-      margin: 0 auto 20px;
-      line-height: 1.5;
-    }
-
     .footer {
       text-align: center;
       margin-top: 80px;
@@ -340,8 +270,7 @@
         grid-template-columns: 1fr;
       }
 
-      .demo-inner,
-      .pricing-card {
+      .demo-inner {
         padding: 25px 18px;
       }
 
@@ -369,33 +298,25 @@
     </div>
 
     <h1>
-      Turn Missed Calls & Messages Into
-      <span class="purple">More Booked Clients</span>
+      Meet Your
+      <span class="purple">24/7 AI Receptionist</span>
     </h1>
 
     <p class="hero-text">
-      NovaFlow helps busy beauty professionals respond faster, answer customer
-      questions, capture leads, and move customers toward booking even while
-      you're busy working with clients.
+      This is a live demonstration built for Ashley Beauty Studio.
+      Talk to the AI just like you're a real customer and see how it
+      answers questions, explains services and helps customers move
+      toward booking.
     </p>
 
-    <div class="hero-buttons">
-      <a href="#demo" class="btn btn-primary">
-        Try the Live AI Demo
-      </a>
-
-      <a
-        href="https://api.leadconnectorhq.com/widget/bookings/mynovaflow-consultation"
-        class="btn btn-secondary"
-        target="_blank"
-      >
-        Book a Free Consultation
-      </a>
-    </div>
+    <p class="instructions">
+      🎤 Pretend you're a customer. Ask about prices, hours,
+      policies, services or booking.
+    </p>
 
   </section>
 
-  <div class="demo-card" id="demo">
+  <div class="demo-card">
 
     <div class="demo-inner">
 
@@ -407,8 +328,7 @@
       <h2>Ashley Beauty Studio</h2>
 
       <p>
-        Pretend you're a real customer. Ask about services, prices,
-        hours, deposits, policies, or booking.
+        Click below and speak directly with Ashley's AI receptionist.
       </p>
 
       <div class="voice-area">
@@ -452,9 +372,9 @@
 
   </div>
 
-  <section class="section">
+  <section class="try-section">
 
-    <h2>Try Asking the AI</h2>
+    <h2>Try asking the AI...</h2>
 
     <div class="questions">
 
@@ -486,7 +406,7 @@
 
   </section>
 
-  <section class="section">
+  <section class="features">
 
     <h2>
       What <span class="purple">NovaFlow</span> Can Handle
@@ -498,26 +418,15 @@
         <div class="feature-icon">📞</div>
         <h3>Phone Calls</h3>
         <p>
-          AI answers customer calls, common questions, and helps move callers
-          toward booking.
+          Answers customer calls while you're busy working with clients.
         </p>
       </div>
 
       <div class="feature">
         <div class="feature-icon">💬</div>
-        <h3>SMS</h3>
+        <h3>SMS & Messages</h3>
         <p>
-          Respond to customer texts automatically and capture leads while
-          you're busy.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">📲</div>
-        <h3>Instagram DMs</h3>
-        <p>
-          Help answer common Instagram questions and guide interested customers
-          toward booking.
+          Helps respond to customer questions and move leads toward booking.
         </p>
       </div>
 
@@ -525,80 +434,65 @@
         <div class="feature-icon">📅</div>
         <h3>Booking Assistance</h3>
         <p>
-          Keep your existing booking system while NovaFlow helps customers get
-          to the right booking page.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">👥</div>
-        <h3>Lead Capture</h3>
-        <p>
-          Keep customer information organized inside your CRM instead of losing
-          leads in messages.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">🔁</div>
-        <h3>Follow-Up</h3>
-        <p>
-          Automatically follow up with interested customers who haven't booked
-          yet.
+          Answers service questions and helps customers reach your
+          existing booking system.
         </p>
       </div>
 
     </div>
 
   </section>
+<section class="section">
 
-  <section class="section">
+  <h2>
+    Start Your <span class="purple">NovaFlow AI Receptionist</span>
+  </h2>
 
-    <h2>Simple Pricing</h2>
+  <div class="feature" style="max-width:700px; margin:0 auto; text-align:center;">
 
-    <div class="pricing-card">
+    <h3 style="font-size:28px; margin-bottom:15px;">
+      NovaFlow AI Receptionist
+    </h3>
 
-      <h3>NovaFlow AI Receptionist</h3>
+    <p style="font-size:36px; font-weight:bold; color:#b789ff; margin-bottom:5px;">
+      $500 Setup
+    </p>
 
-      <div class="price">
-        <div class="price-main">$500 Setup</div>
-        <div class="price-sub">+ $297/month</div>
-      </div>
+    <p style="font-size:20px; color:#aaa; margin-bottom:25px;">
+      + $297/month
+    </p>
 
-      <ul class="included">
-        <li>Custom AI receptionist setup</li>
-        <li>Business knowledge base</li>
-        <li>AI phone call setup</li>
-        <li>SMS automation setup</li>
-        <li>Instagram DM automation setup</li>
-        <li>Existing booking-system assistance</li>
-        <li>Lead capture and CRM setup</li>
-        <li>Basic follow-up workflows</li>
-        <li>Testing and launch support</li>
-      </ul>
-
-      <div class="booking-box">
-
-        <p>
-          Book a free consultation and we'll talk about your current customer
-          communication, where leads may be getting missed, and whether
-          NovaFlow is a good fit for your business.
-        </p>
-
-        <a
-          href="https://api.leadconnectorhq.com/widget/bookings/mynovaflow-consultation"
-          class="btn btn-primary"
-          target="_blank"
-        >
-          Book a Free Consultation
-        </a>
-
-      </div>
-
+    <div style="text-align:left; max-width:500px; margin:0 auto 30px; line-height:2; color:#ddd;">
+      ✓ AI Phone Receptionist<br>
+      ✓ SMS Automation<br>
+      ✓ Instagram DM Automation<br>
+      ✓ Custom Business Knowledge Base<br>
+      ✓ Booking Assistance<br>
+      ✓ Keep Your Existing Booking System<br>
+      ✓ Lead Capture & CRM Setup<br>
+      ✓ Follow-Up Automation<br>
+      ✓ Testing & Launch Setup
     </div>
 
-  </section>
+    <a
+      href="https://api.leadconnectorhq.com/widget/bookings/mynovaflow-consultation"
+      target="_blank"
+      style="
+        display:inline-block;
+        padding:17px 28px;
+        border-radius:14px;
+        text-decoration:none;
+        color:white;
+        font-weight:bold;
+        background:linear-gradient(135deg,#8e49f6,#5d24c5);
+      "
+    >
+      Book a Free Consultation
+    </a>
 
+  </div>
+
+</section>
   <div class="footer">
     NovaFlow AI Receptionist Demo • Built for demonstration purposes
   </div>
@@ -613,4 +507,3 @@
 
 </body>
 </html>
-
